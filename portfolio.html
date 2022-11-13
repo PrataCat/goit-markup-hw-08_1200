@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Студія</title>
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="header-page">
+      <div class="container nav-sections">
+        <a href="./index.html" lang="en" class="logo logo--logo-header link">
+          Web<span class="logo--color">Studio</span>
+        </a>
+        <button type="button" class="burger" data-mobmenu-open>
+          <svg class="burger__icon" width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-burger_40px"></use>
+          </svg>
+        </button>
+        <!-- ----mob-menu---- -->
+        <div class="mob-menu is-hidden" data-mobmenu>
+          <div class="container-mob">
+            <div class="mob-menu__top">
+              <button type="button" class="modal-icon-mob" data-mobmenu-close>
+                <svg class="modal-icon__close" width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-close-24px"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-set mob-menu-set__text list">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="mob-menu-set__item link nav-set__item--current"
+                  >
+                    Студія
+                  </a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="mob-menu-set__item link">
+                    Портфоліо
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="mob-menu-set__item link"> Контакти </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu__bottom">
+              <ul class="mob-menu-contacts list">
+                <li>
+                  <a
+                    href="tel:+380961111111"
+                    class="mob-menu-contacts__nomb link"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                    class="mob-menu-contacts__mail link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-menu-soc-set list">
+                <li class="mob-menu-soc-set__item">
+                  <a href="">Instagram</a>
+                </li>
+                <li class="mob-menu-soc-set__item"><a href="">Twitter</a></li>
+                <li class="mob-menu-soc-set__item"><a href="">Facebook</a></li>
+                <li class="mob-menu-soc-set__item"><a href="">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- -----nav-menu----- -->
+        <nav class="nav">
+          <ul class="nav-set nav-set__text list">
+            <li>
+              <a href="./index.html" class="nav-set__item link"> Студія </a>
+            </li>
+            <li>
+              <a
+                href="./portfolio.html"
+                class="nav-set__item link nav-set__item--current"
+              >
+                Портфоліо
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-set__item link"> Контакти </a>
+            </li>
+          </ul>
+          <ul class="contacts-set contacts-set__text list">
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                lang="en"
+                class="contacts-set__item link"
+              >
+                <svg class="contacts-set__icon" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="contacts-set__item link">
+                <svg class="contacts-set__icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Контакти -->
+      </div>
+    </header>
+    <!--buttons-->
+    <section class="section-padding">
+      <div class="container">
+        <h1 class="visually-hidden">Portfolio</h1>
+        <ul class="btn-list list">
+          <li>
+            <button type="button" class="btn btn--gallery">Усі</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn--gallery">Веб-сайти</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn--gallery">Додатки</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn--gallery">Дизайн</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn--gallery">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- galery -->
+        <ul class="galery list">
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/technocrack.jpg"
+                  alt="сторінка сайта Технокряк"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">Технокряк</h2>
+                <p class="galery__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/new-orlean-vs-golden-star.jpg"
+                  alt="Два хлопця грають в баскетбол"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="galery__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/seafood.jpg"
+                  alt="Логотип ресторану Сіфуд"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="galery__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/prime.jpg"
+                  alt="навушники"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">
+                  Проєкт <span lang="en">Prime</span>
+                </h2>
+                <p class="galery__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/boxes.jpg"
+                  alt="Дві коробки, біла і коричнева"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">
+                  Проєкт <span lang="en">Boxes</span>
+                </h2>
+                <p class="galery__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/inspiration-has-no-borders.jpg"
+                  alt="На моніторі зображена карта світу і перелічені сильні якості команди"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="galery__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/limited-edition.jpg"
+                  alt="Розгорнутий журнал"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">
+                  Видання <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="galery__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/lab.jpg"
+                  alt="Етикетка ЛАБ ЕЛ ТЕГ"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name">Проєкт <span lang="en">LAB</span></h2>
+                <p class="galery__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="galery-card">
+            <a href="#" class="galery__item link">
+              <div class="galery-thumb">
+                <img
+                  src="./images/images-portfolio/growing-business.jpg"
+                  alt="Відкритий ноутбук. На екрані відкритий сайт з заставкою додатка"
+                  width="370"
+                />
+                <p class="galery-thumb__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus nobis illum est magni, molestiae sunt sed enim in
+                  quidem nostrum?
+                </p>
+              </div>
+              <div class="galery__meta">
+                <h2 class="galery__name" lang="en">Growing Business</h2>
+                <p class="galery__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Підвал-->
+    <footer class="footer-page">
+      <div class="footer container">
+        <div class="footer-tab-container">
+          <div class="footer-contacts">
+            <a href="./index.html" lang="en" class="logo logo--footer link">
+              Web<span class="logo--color-invers">Studio</span>
+            </a>
+            <address>
+              <ul class="footer-address list">
+                <li class="footer-contacts__meta">
+                  <a
+                    class="footer-contacts--address-color"
+                    href="https://goo.gl/maps/oZFCVHEpmyyT5ziX9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-contacts__meta">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                    class="footer-contacts--color link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="footer-contacts__meta">
+                  <a
+                    href="tel:+380961111111"
+                    class="footer-contacts--color link"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!--social -->
+          <div class="footer-soc">
+            <h2 class="visually-hidden">Соціальні мережі</h2>
+            <p class="footer-title footer-title--soc-set">приєднуйтесь</p>
+            <ul class="soc-set">
+              <li>
+                <a class="soc-link soc-link--footer" href="">
+                  <svg
+                    class="soc-link__icon soc-link__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="soc-link soc-link--footer" href="">
+                  <svg
+                    class="soc-link__icon soc-link__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="soc-link soc-link--footer" href=""
+                  ><svg
+                    class="soc-link__icon soc-link__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="soc-link soc-link--footer" href=""
+                  ><svg
+                    class="soc-link__icon soc-link__icon--footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-form-space">
+          <p class="footer-title">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <label for="user-advertisement-mail"></label>
+            <input
+              type="email"
+              name="user-advertisement-mail"
+              id="user-advertisement-mail"
+              class="footer-form__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn btn--main footer-form__btn">
+              Підписатися
+              <svg
+                class="icon-send icon-send--right"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

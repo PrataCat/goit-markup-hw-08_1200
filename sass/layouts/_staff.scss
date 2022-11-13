@@ -1,0 +1,60 @@
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.staff-card {
+  width: 100%;
+  background: var(--primbg-secondbtn-logofooter-address-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop-1200 {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.staff__meta {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: auto;
+  padding-right: auto;
+
+  @include desktop-1200 {
+    padding-bottom: 30px;
+  }
+}
+
+.staff__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.staff__pos {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.soc-link__icon--staff {
+  fill: var(--soc-icon-color);
+
+  .soc-link:hover &,
+  .soc-link:focus & {
+    fill: var(--primbg-secondbtn-logofooter-address-color);
+  }
+}

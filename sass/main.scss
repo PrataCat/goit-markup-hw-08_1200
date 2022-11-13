@@ -1,0 +1,24 @@
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/header";
+@import "./components/mobile-menu";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/btn";
+@import "./components/container";
+@import "./components/section-prop";
+@import "./components/soc";
+@import "./components/footer";
+@import "./components/icon-send";
+@import "./components/modal";
+
+@import "./layouts/advantages";
+@import "./layouts/work";
+@import "./layouts/staff";
+@import "./layouts/clients";
+@import "./layouts/galery";

@@ -1,0 +1,71 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--hero-bg-color);
+  text-align: center;
+
+  @include desktop-1200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__overlay {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  height: 400px;
+  background-image: var(--hero-bg-gradient), url(../images/hero-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include retina {
+    background-image: var(--hero-bg-gradient), url(../images/hero-mob-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 768px;
+    background-image: var(--hero-bg-gradient), url(../images/hero-tab.jpg);
+    @include retina {
+      background-image: var(--hero-bg-gradient), url(../images/hero-tab-2x.jpg);
+    }
+  }
+
+  @include desktop-1200 {
+    max-width: 1600px;
+    height: 600px;
+    background-image: var(--hero-bg-gradient), url(../images/hero-img.jpg);
+    @include retina {
+      background-image: var(--hero-bg-gradient), url(../images/hero-img-2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--primbg-secondbtn-logofooter-address-color);
+
+  @media screen and (max-width: 479px) {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  @include desktop-1200 {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

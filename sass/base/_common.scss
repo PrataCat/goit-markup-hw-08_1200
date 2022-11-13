@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding-top: 60px;
+  background-color: var(--primbg-secondbtn-logofooter-address-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+
+  @include tablet {
+    padding-top: 80px;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

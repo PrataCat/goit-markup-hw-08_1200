@@ -1,0 +1,90 @@
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.features__item {
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+  }
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop-1200 {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.features__item--antenna::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--clock::before {
+  background-image: url(../images/clock.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--diagram:before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--astronaut:before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.features__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
